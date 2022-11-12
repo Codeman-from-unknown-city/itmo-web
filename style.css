@@ -58,6 +58,7 @@ h5 {
 .container {
     padding-left: 13.542%;
     padding-right: 13.542%;
+    max-width: 1440px;
 }
 
 .top-section {
