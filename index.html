@@ -6,230 +6,257 @@
     <meta name="description" content="Publict company: We are providing consultancy and finance solutions for medium and small business">
     <title>Publist</title>
     <script src="https://kit.fontawesome.com/4fcdcc1868.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700,600,400,500' rel='stylesheet'>
 </head>
 <body>
-    <header>
-            <span>Publist</span>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+    <header class="container header">
+            <h3 class="logo"><a href="#">Publist</a></h3>
+            <div class="main-nav-block">
+                <nav class="menu">
+                    <ul>
+                        <li class="menu__item"><a href="#">Home</a></li>
+                        <li class="menu__item"><a href="#">Product</a></li>
+                        <li class="menu__item"><a href="#">Pricing</a></li>
+                        <li class="menu__item"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping header__icon_last"></i></a>
+                </div>
+            </div>
     </header>
     <main>
-        <section>
+        <section class="container top-section top-section_fullscreen prefrace">
             <div>
-                <h1>Finance and Consultancy Solution</h1>
+                <h1>Finance and<br> Consultancy<br> Solution</h1>
                 <h4>We know how large objects will act,<br>but things on a small scale.</h4>
-                <button>Get Quote Now</button>
-                <button>Learn More</button>
+                <button class="prefrace__btn prefrace__btn_orange">Get Quote Now</button>
+                <button class="prefrace__btn prefrace__btn_opaque">Learn More</button>
             </div>
-            <form action="#">
-                <h3>Book Appointment</h3>
-                <label>
-                    Name*
-                    <input type="text" reuqired placeholder="Full Name">
-                </label>
-                <label>
-                    Email*
-                    <input type="email" reuqired placeholder="example@gmail.com">
-                </label>
-                <label>
-                    Department*
-                    <select>
+            <div class="book-card">
+                <h3 class="book-card__header">Book Appointment</h3>
+                <form action="#" class="book-form book-form_vertical">
+                    <label for="book-name" class="book-form__label">Name*</label><br>
+                    <input id="book-name" class="book-form__input" type="text" reuqired placeholder="Full Name">
+                    <label for="book-email" class="book-form__label">Email*</label><br>
+                    <input id="book-email" class="book-form__input" type="email" reuqired placeholder="example@gmail.com">
+                    <label for="book-department" class="book-form__label">Department*</label><br>
+                    <select id="book-department" class="book-form__input">
                         <option value="">Please Select</option>
                     </select>
-                </label>
-                <label>
-                    Time*
-                    <select>
+                    <label for="book-time" class="book-form__label">Time*</label><br>
+                    <select id="book-time" class="book-form__input">
                         <option value="">4:00 Available</option>
                     </select>
-                </label>
-                <input type="submit" value="Book Appointment">
-            </form>
+                    <input class="book-form__btn btn-text" type="submit" value="Book Appointment">
+                </form>
+            </div>
         </section>
-        <section>
-            <header>
+        <section class="container top-section">
+            <header class="top-section__header">
                 <h2>Every Client Matters</h2>
-                <p>Problems trying to resolve the conflict between<br>the two major realms of Classical physics: Newtonian mechanics</p>
+                <p class="top-section__desc">
+                    Problems trying to resolve the conflict between<br>the two major realms of Classical physics: Newtonian mechanics
+                </p>
             </header>
-            <div>
-                <div>
-                    <header>
-                        <i class="fa-solid fa-users-line"></i>
+            <div class="clients-matter__features-grid">
+                <div class="feature-card col-3">
+                    <header class="feature-card__header">
+                        <i class="fa-solid fa-users-line fa-xl feature-card__icon"></i>
                         <h5>Environmental</h5>
                     </header>
-                    <ul>
-                        <li>The best products start with Figma</li>
-                        <li>Design with real data</li>
-                        <li>Lightning fast prototyping</li>
-                        <li>Fastest way to organize</li>
-                        <li>Work at the speed of thought.</li>
+                    <div class="feature-card__features-list">
+                        <ul>
+                            <li>-  The best products start with Figma</li>
+                            <li>-  Design with real data</li>
+                            <li>-  Lightning fast prototyping</li>
+                            <li>-  Fastest way to organize</li>
+                            <li>-  Work at the speed of thought.</li>
+                        </ul>
                         <a href="">Learn More</a>
-                    </ul>
+                    </div>
                 </div>
-                <div>
-                    <header>
-                        <i class="fa-solid fa-award"></i>
+                <div class="feature-card col-3">
+                    <header class="feature-card__header">
+                        <i class="fa-solid fa-award fa-xl feature-card__icon feature-card__icon_award"></i>
                         <h5>Save money and time</h5>
                     </header>
-                    <ul>
-                        <li>The best products start with Figma</li>
-                        <li>Design with real data</li>
-                        <li>Lightning fast prototyping</li>
-                        <li>Fastest way to organize</li>
-                        <li>Work at the speed of thought.</li>
+                    <div class="feature-card__features-list">
+                        <ul>
+                            <li>-  The best products start with Figma</li>
+                            <li>-  Design with real data</li>
+                            <li>-  Lightning fast prototyping</li>
+                            <li>-  Fastest way to organize</li>
+                            <li>-  Work at the speed of thought.</li>
+                        </ul>
                         <a href="">Learn More</a>
-                    </ul>
+                    </div>
                 </div>
-                <div>
-                    <header>
-                        <i class="fa-solid fa-book-open"></i>
+                <div class="feature-card col-3">
+                    <header class="feature-card__header">
+                        <i class="fa-solid fa-book-open fa-xl feature-card__icon"></i>
                         <h5>Travel & Aviation</h5>
                     </header>
-                    <ul>
-                        <li>The best products start with Figma</li>
-                        <li>Design with real data</li>
-                        <li>Lightning fast prototyping</li>
-                        <li>Fastest way to organize</li>
-                        <li>Work at the speed of thought.</li>
+                    <div class="feature-card__features-list">
+                        <ul>
+                            <li>-  The best products start with Figma</li>
+                            <li>-  Design with real data</li>
+                            <li>-  Lightning fast prototyping</li>
+                            <li>-  Fastest way to organize</li>
+                            <li>-  Work at the speed of thought.</li>
+                        </ul>
                         <a href="">Learn More</a>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            <header>
+        <section class="container top-section who">
+            <header class="top-section__header">
                 <h2>Who We Are</h2>
-                <p>Problems trying to resolve the conflict between<br>the two major realms of Classical physics: Newtonian mechanics</p>
+                <p class="top-section__desc">
+                    Problems trying to resolve the conflict between<br>the two major realms of Classical physics: Newtonian mechanics
+                </p>
             </header>
-            <img src="media/video-stub.png" alt="">
+            <img class="who__video" src="media/video-stub.png" alt="">
         </section>
-        <section>
-            <header>
+        <section class="container top-section clients-review">
+            <header class="top-section__header">
                 <h2>What Clients Say</h2>
-                <p>Problems trying to resolve the conflict between<br>the two major realms of Classical physics: Newtonian mechanics</p>
+                <p class="top-section__desc">
+                    Problems trying to resolve the conflict between<br>the two major realms of Classical physics: Newtonian mechanics
+                </p>
             </header>
-            <div>
-                <div>
-                    <div>
+            <div class="clients-review__grid">
+                <div class="review col-3">
+                    <div class="rating">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
-                    <div>
+                    <p class="review__p">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                    <div class="person">
                         <img src="media/designer1.png" alt="">
-                        <div>
-                            <span>Regina Miles</span>
-                            <span>Designer</span>
+                        <div class="person__info">
+                            <span class="person__name">Regina Miles</span>
+                            <span class="person__prof">Designer</span>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="review col-3">
+                    <div class="rating">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
-                    <div>
+                    <p class="review__p">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                    <div class="person">
                         <img src="media/designer2.png" alt="">
-                        <div>
-                            <span>Regina Miles</span>
-                            <span>Designer</span>
+                        <div class="person__info">
+                            <span class="person__name">Regina Miles</span>
+                            <span class="person__prof">Designer</span>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="review col-3">
+                    <div class="rating">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
-                    <div>
+                    <p class="review__p">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                    <div class="person">
                         <img src="media/designer3.png" alt="">
-                        <div>
-                            <span>Regina Miles</span>
-                            <span>Designer</span>
+                        <div class="person__info">
+                            <span class="person__name">Regina Miles</span>
+                            <span class="person__prof">Designer</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <header>
+        <section class="container top-section">
+            <header class="top-section__header">
                 <h2>Meet Our Team</h2>
-                <p>Problems trying to resolve the conflict between<br>the two major realms of Classical physics: Newtonian mechanics</p>
+                <p class="top-section__desc">
+                    Problems trying to resolve the conflict between<br>the two major realms of Classical physics: Newtonian mechanics
+                </p>
             </header>
-            <div>
-                <div>
+            <div class="temmates-grid">
+                <div class="teammate col-3">
                     <img src="media/co-founder.png" alt="">
-                    <span>Avie Beaton</span>
-                    <span>CO Founder</span>
-                    <div></div>
+                    <div class="teammate__info">
+                        <h5>Avie Beaton</h5>
+                        <span class="temmate__post">CO Founder</span>
+                        <div class="teammate__social">
+                            <a href=""><i class="fa-2x fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-2x fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-2x fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div>
+                <div class="teammate col-3">
                     <img src="media/consultant.png" alt="">
-                    <span>Ben Jonson</span>
-                    <span>Consultant</span>
-                    <div></div>
+                    <div class="teammate__info">
+                        <h5>Ben Jonson</h5>
+                        <span class="temmate__post">Consultant</span>
+                        <div class="teammate__social">
+                            <a href=""><i class="fa-2x fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-2x fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-2x fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div>
+                <div class="teammate col-3">
                     <img src="media/ceo.png" alt="">
-                    <span>Ashley Fletcher</span>
-                    <span>CEO</span>
-                    <div></div>
+                    <div class="teammate__info">
+                        <h5>Ashley Fletcher</h5>
+                        <span class="temmate__post">CEO</span>
+                        <div class="teammate__social">
+                            <a href=""><i class="fa-2x fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-2x fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-2x fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="container top-section top-section_fullscreen contact-us">
             <header>
                 <h5>Contact Us</h5>
                 <h2>Make an Appointment</h2>
             </header>
-            <form action="#">
-                <label>
-                    Name*
-                    <input type="text" reuqired placeholder="Full Name">
-                </label>
-                <label>
-                    Email*
-                    <input type="email" reuqired placeholder="example@gmail.com">
-                </label>
-                <label>
-                    Department*
-                    <select>
+            <form action="#" class="book-form contact-us__form">
+                <div>
+                    <input id="book-name" class="book-form__input col-2" type="text" reuqired placeholder="Full Name">
+                    <input id="book-email" class="book-form__input col-2" type="email" reuqired placeholder="example@gmail.com">
+                </div>
+                <div>
+                    <select id="book-department" class="book-form__input col-2">
                         <option value="">Please Select</option>
                     </select>
-                </label>
-                <label>
-                    Time*
-                    <select>
+                    <select id="book-time" class="book-form__input col-2">
                         <option value="">4:00 Available</option>
                     </select>
-                </label>
-                <textarea></textarea>
-                <input type="submit" value="Book Appointment">
+                </div>
+                <textarea class="book-form__input" placeholder="Message"></textarea>
+                <input class="book-form__btn btn-text" type="submit" value="Book Appointment">
             </form>
         </section>
-        <article>
-            <h3>Consulting Agency For Your Business</h3>
-            <p>the quick fox jumps over the lazy dog</p>
-            <button>Contact Us</button>
+        <article class="container quick-contact">
+            <header>
+                <h3>Consulting Agency For Your Business</h3>
+                <p>the quick fox jumps over the lazy dog</p>
+            </header>
+            <button class="quick-contact__btn btn-text">Contact Us</button>
         </article>
     </main>
     <footer>
