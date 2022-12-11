@@ -213,7 +213,8 @@ h5 {
 .book-form__btn {
     border: none;
     background-color: #FF7B47;
-    padding: 15px 40px;
+    width: 245px;
+    height: 58px;
     border-radius: 5px;
     margin-top: 40px;
 }
