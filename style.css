@@ -58,6 +58,7 @@ h5 {
     padding-left: 13.542%;
     padding-right: 13.542%;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .top-section {
@@ -85,6 +86,9 @@ h5 {
     color: white;
     height: 12.6vh;
     width: 100%;
+    max-width: 1440px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .header__content {
@@ -133,6 +137,7 @@ h5 {
     padding-top: 18.7vh;
     padding-bottom: 7.075vh;
     background-image: url("media/first-section-bg.png");
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -290,6 +295,8 @@ h5 {
 
 .contact-us {
     background-image: url("media/contact-us-section-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 11vh;
     padding-bottom: 11vh;
 }
