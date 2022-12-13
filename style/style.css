@@ -136,7 +136,7 @@ h5 {
 .prefrace {
     padding-top: 18.7vh;
     padding-bottom: 7.075vh;
-    background-image: url("media/first-section-bg.png");
+    background-image: url("../media/first-section-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -283,7 +283,7 @@ h5 {
 }
 
 .who {
-        background: url(media/who-custom-bg.png) no-repeat bottom center;
+        background: url(../media/who-custom-bg.png) no-repeat bottom center;
         background-size: 100% 46%;
 }
 
@@ -294,7 +294,7 @@ h5 {
 }
 
 .contact-us {
-    background-image: url("media/contact-us-section-bg.png");
+    background-image: url("../media/contact-us-section-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 11vh;
