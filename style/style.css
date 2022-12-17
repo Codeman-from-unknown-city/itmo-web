@@ -45,6 +45,10 @@ h5 {
     line-height: 24px;
 }
 
+button:hover, input[type="submit"]:hover {
+    cursor: pointer;
+}
+
 .col-3 {
     flex: 0 1 30%;
     min-width: 300px;
