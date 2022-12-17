@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        let start = (new Date).getTime();
+        window.addEventListener('load', (function () {
+            let diff = ((new Date).getTime() - start) / 1000;
+            document.getElementById('load-time-val').textContent = diff.toString();
+        }));
+    </script>
+
     <title>Publist</title>
 
     <meta charset="UTF-8">
@@ -329,7 +337,9 @@
                 </ul>
             </nav>
         </section>
-        <section class="copyright container">Made With Love By Figmaland All Right Reserved</section>
+        <section class="copyright container">
+            Page load time: <span id="load-time-val"></span> sec.
+        </section>
     </footer>
 </body>
 </html>
