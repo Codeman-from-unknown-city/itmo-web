@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/todo.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:700,600,400,500'>
 
     <script src="https://kit.fontawesome.com/4fcdcc1868.js" crossorigin="anonymous" async></script>
@@ -40,5 +41,15 @@
                 </div>
             </div>
     </header>
+    <section class="section_first container">
+        <div class="todo">
+            <header class="todo__header">TODO List</header>
+            <form class="todo__form">
+                <input class="todo__input" type="text" name="task">
+                <button class="todo__button">Add task</button>
+            </form>
+            <ul class="todo__list todo__list_invisible"></ul>
+        </div>
+    </section>
 </body>
 </html>
