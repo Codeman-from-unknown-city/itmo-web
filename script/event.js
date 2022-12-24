@@ -1,5 +1,6 @@
 import currentPage from './page.js'
 import { addTask, deleteTask, toggleTaskDone } from './todo.js'
+import { pullTodos, toggleErrorVisibility } from './fetch.js'
 
 export default function setupEventListeners() {
     let eventsListeners = new Map(
@@ -21,6 +22,12 @@ export default function setupEventListeners() {
             ],
             [
                 ['todo', '.todo__form', 'submit'], addTask
+            ],
+            [
+                ['todo', '.modal .close', 'click'], toggleErrorVisibility
+            ],
+            [
+                ['todo', '.todo__pull-btn', 'click'], pullTodos
             ],
         ]
     );

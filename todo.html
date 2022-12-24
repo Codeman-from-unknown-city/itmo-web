@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/todo.css">
+    <link rel="stylesheet" href="style/preloader.css">
+    <link rel="stylesheet" href="style/modal.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:700,600,400,500'>
 
     <script src="https://kit.fontawesome.com/4fcdcc1868.js" crossorigin="anonymous" async></script>
@@ -44,12 +46,22 @@
     <section class="section_first container">
         <div class="todo">
             <header class="todo__header">TODO List</header>
-            <form class="todo__form">
+            <form class="todo__form" id="todo__form">
                 <input class="todo__input" type="text" name="task">
-                <button class="todo__button">Add task</button>
+                <div class="todo__btns-grid">
+                    <button form="todo__form" class="todo__button todo__add-btn">Add task</button>
+                    <button class="todo__button todo__pull-btn">Pull data</button>
+                </div>
             </form>
             <ul class="todo__list todo__list_invisible"></ul>
         </div>
     </section>
+    <div class="shadow"></div>
+    <div class="lds-dual-ring"></div>
+    <div class="modal">
+        <button class="close">✖</button>
+        <img src="https://png.pngitem.com/pimgs/s/119-1190775_warning-sign-icon-png-transparent-png.png" alt="warnign" />
+        <p>Ooops... Something went wrong.</p>
+    </div>
 </body>
 </html>

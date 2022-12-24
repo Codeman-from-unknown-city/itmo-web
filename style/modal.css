@@ -1,0 +1,39 @@
+.modal {
+  width: 320px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 30%;
+  display: none;
+  border: 3px solid red;
+}
+
+.modal_visible {
+    display: flex;
+}
+
+.modal button.close {
+  width: 30px;
+  font-size: 20px;
+  color: #c0c5cb;
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+}
+.modal img {
+  width: 82px;
+  margin-bottom: 15px;
+}
+
+.modal p {
+  margin-bottom: 40px;
+  font-size: 18px;
+}

@@ -2,7 +2,7 @@ import currentPage from "./page.js";
 
 let extractNumId = taskId => parseInt(taskId.split('-').at(-1), 10);
 
-function addTaskEl(id, value, done) {
+export function addTaskEl(id, value, done) {
     let li = document.createElement('li');
     li.className = 'todo__li';
 
@@ -56,6 +56,20 @@ export function deleteTask(event) {
         list.classList.toggle('todo__list_invisible');
 }
 
+export function genTaskId() {
+    let id = -1;
+    document.querySelectorAll('.todo__checkbox').forEach(
+        el => {
+            let currId = extractNumId(el.id);
+            if (currId > id)
+                id = currId;
+        }
+    );
+    id++;
+
+    return id;
+}
+
 export function addTask(event) {
     event.preventDefault();
 
@@ -64,20 +78,11 @@ export function addTask(event) {
     if (!task.trim().length)
         return;
 
-    let nextId = -1;
-    document.querySelectorAll('.todo__checkbox').forEach(
-        el => {
-            let currId = extractNumId(el.id);
-            if (currId > nextId)
-                nextId = currId;
-        }
-    );
-    nextId++;
-
-    addTaskEl(nextId, task, false);
+    let id = genTaskId();
+    addTaskEl(id, task, false);
 
     window.localStorage
-          .setItem(nextId, JSON.stringify({task, done: false}));
+          .setItem(id, JSON.stringify({task, done: false}));
 }
 
 (function restoreList() {

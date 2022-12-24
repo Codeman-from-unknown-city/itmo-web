@@ -150,3 +150,9 @@ input[type="checkbox"]:not(:checked) + label:after {
 input[type="checkbox"]:checked + label:after {
     opacity: 1;
 }
+
+.todo__btns-grid {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
